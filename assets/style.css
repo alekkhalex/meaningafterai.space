@@ -315,3 +315,27 @@ footer { border-top: 1px solid var(--rule); }
 .about-head h2 { margin: 0 !important; }
 .avatar { display: block; width: 80px; height: 80px; border-radius: 999px; object-fit: cover; border: 1px solid var(--rule); background: var(--surface); flex: none; }
 @media (max-width: 639px) { .about-head { margin-top: 48px; } .avatar { width: 64px; height: 64px; } }
+
+/* Review fixes, 15 Nov 2026 */
+.node .label .from { font-weight: 400; letter-spacing: 0.04em; text-transform: none; margin-left: 6px; }
+.callout-warn { border-color: var(--warn); background: var(--warn-soft); }
+.chart .zero { stroke: var(--muted); opacity: 0.45; }
+.sw-empty { background: transparent; border-color: var(--muted); }
+.cite .btn { margin-top: 8px; }
+@media (max-width: 639px) {
+  .scheme .n-c { order: 0; } .scheme .n-a { order: 1; } .scheme .n-t { order: 2; }
+  .scheme .n-b { order: 3; } .scheme .n-p { order: 4; } .scheme .n-g { order: 5; }
+  .table-wrap { overflow: visible; border: 0; border-radius: 0; }
+  .table-wrap table { min-width: 0; }
+  .table-wrap thead { display: none; }
+  .table-wrap table, .table-wrap tbody, .table-wrap tr, .table-wrap td { display: block; width: 100%; }
+  .table-wrap tr { border: 1px solid var(--rule); border-radius: 12px; padding: 8px 0; margin-bottom: 12px; }
+  .table-wrap td { border: 0; padding: 4px 16px; }
+  .table-wrap td::before { content: attr(data-label); display: block; font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+  .table-wrap td:first-child::before { display: none; }
+}
+@media print {
+  .statement .w { color: inherit !important; }
+  .refs a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 12px; word-break: break-all; }
+  figure, .callout, .abstract { break-inside: avoid; }
+}
