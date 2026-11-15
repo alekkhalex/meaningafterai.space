@@ -307,3 +307,5 @@ footer { border-top: 1px solid var(--rule); }
   .reveal { opacity: 1 !important; transform: none !important; }
   body { background: #fff; color: #000; }
 }
+
+.meta a { color: var(--text); text-decoration-style: dotted; text-underline-offset: 4px; }
