@@ -309,3 +309,9 @@ footer { border-top: 1px solid var(--rule); }
 }
 
 .meta a { color: var(--text); text-decoration-style: dotted; text-underline-offset: 4px; }
+
+/* About the author */
+.about-head { display: flex; align-items: center; gap: 16px; margin: 64px 0 24px; }
+.about-head h2 { margin: 0 !important; }
+.avatar { display: block; width: 80px; height: 80px; border-radius: 999px; object-fit: cover; border: 1px solid var(--rule); background: var(--surface); flex: none; }
+@media (max-width: 639px) { .about-head { margin-top: 48px; } .avatar { width: 64px; height: 64px; } }
