@@ -1,0 +1,8 @@
+# Исходные транскрипты — тяжёлые, хранятся только локально
+research/Seminar_Full_Knowledge.md
+research/streams_txt/
+research/transcripts-course3/
+research/transcripts-course5/
+research/consultations/
+
+.DS_Store
