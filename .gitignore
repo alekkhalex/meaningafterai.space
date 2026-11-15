@@ -1,8 +1,4 @@
-# Исходные транскрипты — тяжёлые, хранятся только локально
-research/Seminar_Full_Knowledge.md
-research/streams_txt/
-research/transcripts-course3/
-research/transcripts-course5/
-research/consultations/
+# Материалы исследования (транскрипты, выписки, консультации) — только локально, в публичный репозиторий не попадают
+research/
 
 .DS_Store
